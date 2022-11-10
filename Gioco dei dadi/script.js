@@ -9,10 +9,13 @@ btn.addEventListener('click',
 
         if (user > computer) {
             output.innerHTML = "Complimenti hai vinto";
+            output.style.color = "green";
         } else if (user < computer) {
             output.innerHTML = "Mi dispiace hai perso";
+            output.style.color = "red";
         } else {
             output.innerHTML = "Avete pareggiato"
+            output.style.color = "orange";
         }
     }
 );

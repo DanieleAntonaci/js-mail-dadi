@@ -14,10 +14,12 @@ btnVerification.addEventListener('click', function () {
         const element = listEmail[i];
         if (element == insertName.value) {
             output.innerHTML = 'Sei uno degli invitai alla festa';
-            userVerified = true
+            output.style.color = "chartreuse";
+            userVerified = true;
         };
     };
     if (!userVerified) {
         output.innerHTML = 'Mi dispiace, non sei uno degli invitati alla festa';
+        output.style.color = "red";
     }
 })
